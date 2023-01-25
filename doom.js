@@ -124,23 +124,44 @@ function ans(a){
             if (qnum == 3){
                 result3 = true;
             }
+            if (qnum == 6){
+                result6 = true;
+            }
             qnum ++;
             questionUpdate(qnum);
             break;
 
         case 2:
-            text = document.getElementById("ans").innerHTML = "Antwoord 2";
+            if (qnum == 2){
+                result2 = true;
+            }
+            if (qnum == 10){
+                result10 = true;
+            }
             qnum ++;
             questionUpdate(qnum);
             break;
 
         case 3:
-            text = document.getElementById("ans").innerHTML = "Antwoord 3";
+            if (qnum == 4){
+                result4 = true;
+            }
+            if (qnum == 5){
+                result5 = true;
+            }
             qnum ++;
             questionUpdate(qnum);
             break;
         case 4:
-            text = document.getElementById("ans").innerHTML = "Antwoord 4";
+            if (qnum == 7){
+                result7 = true;
+            }
+            if (qnum == 8){
+                result8 = true;
+            }
+            if (qnum == 9){
+                result9 = true;
+            }
             qnum ++;
             questionUpdate(qnum);
             break;
