@@ -25,7 +25,6 @@ h2{
         margin-top: 2%;
         width: 500px;
         margin-bottom: 6%;
-        display: none;
 }
 
 
@@ -89,8 +88,28 @@ h2{
         margin-top: 10%;
       }
 
+      #resbtn1 {
+        background-color: #000000;
+        border: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #e41146, #f58712);
+        color: white;
+        padding: 20px;
+        font-size: 4vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        display: none;
+      }
+
+
 #ansbtn1:hover {background-color: #530400;}  
 #ansbtn2:hover {background-color: #530400;}  
 #ansbtn3:hover {background-color: #530400;}  
-#ansbtn4:hover {background-color: #530400;}  
+#ansbtn4:hover {background-color: #530400;}
+#resbtn1:hover {background-color: #530400;}
+
+#ans1, #ans2, #ans3, #ans4, #ans5, #ans6, #ans7, #ans8, #ans9, #ans10 {
+        display: none;
+}
 
