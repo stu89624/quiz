@@ -26,83 +26,83 @@ document.getElementById("questionnum").innerHTML = "Vraag " + qnum + "";
 function questionUpdate(questionNumber) {
     switch(questionNumber){
         case 1:
-            document.getElementById("question").innerHTML = "Er vlogen 2 crocodillen. Een is blauw, de tweede naar het noorden. Hoe oud is de egel?";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 1.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 1.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 1.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 1.4";
+            document.getElementById("question").innerHTML = "Wie is de hoofdpersoon?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "John";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Arthur";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Dutch";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Sadie";
             break;
 
         case 2:
-            document.getElementById("question").innerHTML = "vraag text 2";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 2.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 2.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 2.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 2.4";
+            document.getElementById("question").innerHTML = "Hoelang is er aan de game gewerkt?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "3 Jaar";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "5 Jaar";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "6 Jaar";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "8 jaar";
             break;
         
         case 3:
-            document.getElementById("question").innerHTML = "vraag text 3";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 3.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 3.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 3.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 3.4";
+            document.getElementById("question").innerHTML = "In welk jaar vind de game plaats";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "1909";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "1899";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "1809";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "1890";
             break;
     
         case 4:
-            document.getElementById("question").innerHTML = "vraag text 4";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 4.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 4.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 4.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 4.4";
+            document.getElementById("question").innerHTML = "De hoeveelste RDR game is dit?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "1e";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "2e";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "3e";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "4e";
             break;
             
         case 5:
-            document.getElementById("question").innerHTML = "vraag text 5";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 5.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 5.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 5.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 5.4";
+            document.getElementById("question").innerHTML = "In welk jaar is de game gereleased?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "2016";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "2018";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "2019";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "2020";
             break;
 
         case 6:
-            document.getElementById("question").innerHTML = "vraag text 6";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 6.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 6.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 6.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 6.4";
+            document.getElementById("question").innerHTML = "Hoe heet de gang waar je in zit?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Del Lobo Gang";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Lemoyne Raiders";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Van Der Linde Gang";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "O'Driscoll's";
             break;
         
         case 7:
-            document.getElementById("question").innerHTML = "vraag text 7";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 7.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 7.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 7.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 7.4";
+            document.getElementById("question").innerHTML = "Met wie gaat Arthur drinken?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Lenny";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Hosea";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Javier";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Sadie";
             break;
     
         case 8:
-            document.getElementById("question").innerHTML = "vraag text 8";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 8.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 8.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 8.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 8.4";
+            document.getElementById("question").innerHTML = "Bij welke locatie is je kamp in Chapter 2?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Strawberry";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Rhodes";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Valentine";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Annesburg";
             break;
             
         case 9:
-            document.getElementById("question").innerHTML = "vraag text 9";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 9.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 9.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 9.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 9.4";
+            document.getElementById("question").innerHTML = "Hoe heet de eerste missie?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Outlaws from the West";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Old Friends";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Eastward Bound";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "A Quiet Time";
             break;
         
         case 10:
-            document.getElementById("question").innerHTML = "vraag text 10";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 10.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 10.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 10.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 10.4";
+            document.getElementById("question").innerHTML = "Vanuit waar is de gang gevlucht?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Rhodes";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Tumbleweed";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Valentine";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Blackwater";
             break;
                 
                 
@@ -115,11 +115,36 @@ function ans(a){
 
     switch(a) {
         case 1:
+            if (qnum == 9){
+                result9 = true;
+            }
+            if (qnum == 7){
+                result7 = true;
+            }
+            qnum ++;
+            questionUpdate(qnum);
+            break;
+
+        case 2:
             if (qnum == 1){
                 result1 = true;
             }
+            if (qnum == 5){
+                result5 = true;
+            }
             if (qnum == 3){
                 result3 = true;
+            }
+            qnum ++;
+            questionUpdate(qnum);
+            break;
+
+        case 3:
+            if (qnum == 8){
+                result8 = true;
+            }
+            if (qnum == 4){
+                result4 = true;
             }
             if (qnum == 6){
                 result6 = true;
@@ -127,37 +152,12 @@ function ans(a){
             qnum ++;
             questionUpdate(qnum);
             break;
-
-        case 2:
+        case 4:
             if (qnum == 2){
                 result2 = true;
             }
             if (qnum == 10){
                 result10 = true;
-            }
-            qnum ++;
-            questionUpdate(qnum);
-            break;
-
-        case 3:
-            if (qnum == 4){
-                result4 = true;
-            }
-            if (qnum == 5){
-                result5 = true;
-            }
-            qnum ++;
-            questionUpdate(qnum);
-            break;
-        case 4:
-            if (qnum == 7){
-                result7 = true;
-            }
-            if (qnum == 8){
-                result8 = true;
-            }
-            if (qnum == 9){
-                result9 = true;
             }
             qnum ++;
             questionUpdate(qnum);
