@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 body {
-        background-color: #5f5f5f;
+        background-color: #2d2d2d;
         background-image: url("rdr2bg.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -10,8 +10,13 @@ body {
         height: 100%;
         background-size: cover;
         font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        overflow-x: hidden;
 }
 
+hr {
+ border: 1px solid white;
+ border-radius: 50px;
+}
 
 .quizzie {
         width: 200px;
@@ -34,7 +39,7 @@ h2{
 
 .logo {
         margin-top: 2%;
-        width: 500px;
+        width: 300px;
 }
 
 
@@ -45,84 +50,55 @@ h2{
     }
 
 
-#ansbtn1 {
-        background-color: #000000;
-        border: 2px solid;
+    #ansbtn1, #ansbtn2, #ansbtn3, #ansbtn4 {
+        background-color: #c91616;
+        border: 3px solid black;
         border-image-slice: 1;
-        border-color: rgb(165, 0, 0);
-        color: white;
-        padding: 20px;
+        border-color: rgb(0, 0, 0);        
+        color: rgb(255, 255, 255);
+        padding: 25px;
         font-size: 40px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 10%;
+        font-weight: 600;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 5%;
         width: 350px;
+        border-radius: 5px;
       }
 
-      #ansbtn2 {
-        background-color: #000000;
-        border: 2px solid;
-        border-image-slice: 1;
-        border-color: rgb(165, 0, 0);
-        color: white;
-        padding: 20px;
-        font-size: 40px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 10%;
-        width: 350px;
-      }
-
-      #ansbtn3 {
-        background-color: #000000;
-        border: 2px solid;
-        border-image-slice: 1;
-        border-color: rgb(165, 0, 0);        
-        color: white;
-        padding: 20px;
-        font-size: 40px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 10%;
-        width: 350px;
-      }
-
-      #ansbtn4 {
-        background-color: #000000;
-        border: 2px solid;
-        border-image-slice: 1;
-        border-color: rgb(165, 0, 0);
-        color: white;
-        padding: 20px;
-        font-size: 40px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 10%;
-        width: 350px;
-      }
+    
 
       #resbtn1 {
-        background-color: #000000;
-        border: 2px solid;
+        background-color: #c91616;
+        border: 3px solid black;
         border-image-slice: 1;
-        border-color: rgb(165, 0, 0);
-        color: white;
-        padding: 20px;
+        border-color: rgb(0, 0, 0);        
+        color: rgb(255, 255, 255);
+        padding: 25px;
         font-size: 40px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 10%;
+        font-weight: 600;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 5%;
+        width: 400px;
+        border-radius: 5px;
         display: none;
       }
 
 
-#ansbtn1:hover {background-color: #530400;}  
-#ansbtn2:hover {background-color: #530400;}  
-#ansbtn3:hover {background-color: #530400;}  
-#ansbtn4:hover {background-color: #530400;}
-#resbtn1:hover {background-color: #530400;}
+#ansbtn1:hover {background-color: #8d1711;}  
+#ansbtn2:hover {background-color: #8d1711;}    
+#ansbtn3:hover {background-color: #8d1711;}  
+#ansbtn4:hover {background-color: #8d1711;}  
+#resbtn1:hover {background-color: #8d1711;}  
 
 #ans1, #ans2, #ans3, #ans4, #ans5, #ans6, #ans7, #ans8, #ans9, #ans10 {
         display: none;
 }
 
+#resultaat{
+        margin-top: 50px;
+        color: white;   
+        font-size: 80px;
+        font-weight: 800;
+}
