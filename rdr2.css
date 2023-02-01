@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+        background-color: #5f5f5f;
+        background-image: url("doombg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+}
+
+h1{
+        color: white;
+        font-size: 4vw;
+}
+
+h2{
+        color: white;
+        font-size: 2vw;
+}
+
+
+
+
+.logo {
+        margin-top: 2%;
+        width: 500px;
+        margin-bottom: 6%;
+}
+
+
+.div1 {
+        clear: both;
+        width: 88%;
+        height: auto;
+    }
+.div2 {
+        margin-top: 5%;
+}
+
+#ansbtn1 {
+        background-color: #000000;
+        border: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #e41146, #f58712);
+        color: white;
+        padding: 20px;
+        font-size: 4vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+      }
+
+      #ansbtn2 {
+        background-color: #000000;
+        border: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #e41146, #f58712);
+        color: white;
+        padding: 20px;
+        font-size: 4vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+      }
+
+      #ansbtn3 {
+        background-color: #000000;
+        border: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #e41146, #f58712);
+        color: white;
+        padding: 20px;
+        font-size: 4vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+      }
+      #ansbtn4 {
+        background-color: #000000;
+        border: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #e41146, #f58712);
+        color: white;
+        padding: 20px;
+        font-size: 4vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+      }
+
+      #resbtn1 {
+        background-color: #000000;
+        border: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #e41146, #f58712);
+        color: white;
+        padding: 20px;
+        font-size: 4vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        display: none;
+      }
+
+
+#ansbtn1:hover {background-color: #530400;}  
+#ansbtn2:hover {background-color: #530400;}  
+#ansbtn3:hover {background-color: #530400;}  
+#ansbtn4:hover {background-color: #530400;}
+#resbtn1:hover {background-color: #530400;}
+
+#ans1, #ans2, #ans3, #ans4, #ans5, #ans6, #ans7, #ans8, #ans9, #ans10 {
+        display: none;
+}
+
