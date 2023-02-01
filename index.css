@@ -7,25 +7,32 @@ body {
     background-color: rgb(50, 50, 50);
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
+
+.quizzie {
+    width: 200px;
+    position: absolute;
+  }
 
 .center {
     margin: auto;
     width: 100%;
-    border: 3px solid rgb(0, 96, 128);
     padding: 10px;
     height: 600px;
     position: fixed;
     bottom: 100px;
+    display: flex;
   }
 
-.card {
-    background-color: white;
-    max-width: 500px;
-    max-height: 600px;
-    border-radius: 20px;
-}
+  .card
+  {
+    margin: auto;
+    width: 50%;
+  float:left;
+  width: 25%;
+  }
+
 
 .card img {
    width: 500px;
@@ -35,7 +42,8 @@ body {
 }
 
 .beginbtn{
-    width: 300px;
+    margin: auto;
+    width: 50%;
     height: 60px;
     font-size: 30px;
     border-radius: 10px;
@@ -47,8 +55,4 @@ body {
     background-color: rgb(178, 178, 178);
 }
 
-.centerbtn {
-    justify-content: center;
-    align-items: center;
-    margin-top: -40px;
-  }
+

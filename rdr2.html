@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>RDR2</title>
-        <link href="rdr2.css" type="text/css" rel="stylesheet" />
-    </head>
-    <body>
-        <a href="index.html"><img class="quizzie" src="quizzie.png" alt="logo"></a>
-        <center>
-            <img class="logo" src="rdr2logo.png" alt="doom logo">
-        <h1 id="questionnum"></h1>
-        <div class="div1">
-            <div class="div2">
-        <h2 id="question"></h2>
-            </div>
-            <br>
-            <hr>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dead Redemption 2</title>
+    <link href="rdr2.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="index.html"><img class="quizzie" src="quizzie.png" alt="logo"/></a>
+    <center>
+      <img class="logo" src="rdr2logo.png" alt="rdr2 logo" />
+      <h1 id="questionnum"></h1>
+      <div class="div1">
+        <div class="div2">
+          <h2 id="question"></h2>
+        </div>
+        <br />
+        <hr />
+
+        <!-- knoppen voor de antwoorden-->
         <button id="ansbtn1" onclick="ans(1)"></button>
         <button id="ansbtn2" onclick="ans(2)"></button>
-        <br>
+        <br/>
         <button id="ansbtn3" onclick="ans(3)"></button>
         <button id="ansbtn4" onclick="ans(4)"></button>
 
-        <button id="resbtn1" onclick="res()">Resultaten Zien</button> <!-- This one is hidden by default -->
+        <!-- hidden by default-->
+        <button id="resbtn1" onclick="res()">Resultaat</button>
 
-
+        <!-- hier komt de score te staan-->
         <div id="resultaat"></div>
-    </div>
+      </div>
     </center>
     <script src="rdr2.js"></script>
-    </body>
+  </body>
 </html>

@@ -1,3 +1,6 @@
+let username = window.prompt("Vul je naam in")
+
+
 let qnum = 1;
 let question = "";
 let btntext1 = "";
@@ -17,7 +20,7 @@ document.getElementById("questionnum").innerHTML = "Vraag " + qnum + "";
 function questionUpdate(questionNumber) {
   switch (questionNumber) {
     case 1:
-      document.getElementById("question").innerHTML = "Wie is de hoofdpersoon?";
+      document.getElementById("question").innerHTML = "Wie is de main character?";
       btntext1 = document.getElementById("ansbtn1").innerHTML = "John";
       btntext2 = document.getElementById("ansbtn2").innerHTML = "Arthur";
       btntext3 = document.getElementById("ansbtn3").innerHTML = "Dutch";
@@ -25,8 +28,7 @@ function questionUpdate(questionNumber) {
       break;
 
     case 2:
-      document.getElementById("question").innerHTML =
-        "Hoelang is er aan de game gewerkt?";
+      document.getElementById("question").innerHTML ="Hoelang is er aan de game gewerkt?";
       btntext1 = document.getElementById("ansbtn1").innerHTML = "3 Jaar";
       btntext2 = document.getElementById("ansbtn2").innerHTML = "5 Jaar";
       btntext3 = document.getElementById("ansbtn3").innerHTML = "6 Jaar";
@@ -34,8 +36,7 @@ function questionUpdate(questionNumber) {
       break;
 
     case 3:
-      document.getElementById("question").innerHTML =
-        "In welk jaar vind de game plaats";
+      document.getElementById("question").innerHTML ="In welk jaar vind de game plaats";
       btntext1 = document.getElementById("ansbtn1").innerHTML = "1909";
       btntext2 = document.getElementById("ansbtn2").innerHTML = "1899";
       btntext3 = document.getElementById("ansbtn3").innerHTML = "1809";
@@ -43,8 +44,7 @@ function questionUpdate(questionNumber) {
       break;
 
     case 4:
-      document.getElementById("question").innerHTML =
-        "De hoeveelste RDR game is dit?";
+      document.getElementById("question").innerHTML ="De hoeveelste Red Dead game is dit?";
       btntext1 = document.getElementById("ansbtn1").innerHTML = "1e";
       btntext2 = document.getElementById("ansbtn2").innerHTML = "2e";
       btntext3 = document.getElementById("ansbtn3").innerHTML = "3e";
@@ -52,8 +52,7 @@ function questionUpdate(questionNumber) {
       break;
 
     case 5:
-      document.getElementById("question").innerHTML =
-        "In welk jaar is de game gereleased?";
+      document.getElementById("question").innerHTML ="In welk jaar is de game gereleased?";
       btntext1 = document.getElementById("ansbtn1").innerHTML = "2016";
       btntext2 = document.getElementById("ansbtn2").innerHTML = "2018";
       btntext3 = document.getElementById("ansbtn3").innerHTML = "2019";
@@ -61,17 +60,15 @@ function questionUpdate(questionNumber) {
       break;
 
     case 6:
-      document.getElementById("question").innerHTML =
-        "Hoe heet de gang waar je in zit?";
-      btntext1 = document.getElementById("ansbtn1").innerHTML = "Lobo";
-      btntext2 = document.getElementById("ansbtn2").innerHTML = "Lemoyne";
-      btntext3 = document.getElementById("ansbtn3").innerHTML = "Van Der Linde";
-      btntext4 = document.getElementById("ansbtn4").innerHTML = "O'Driscoll's";
+      document.getElementById("question").innerHTML ="Wie is de leider van de Van Der Linde gang";
+      btntext1 = document.getElementById("ansbtn1").innerHTML = "Charles";
+      btntext2 = document.getElementById("ansbtn2").innerHTML = "Micah";
+      btntext3 = document.getElementById("ansbtn3").innerHTML = "Dutch";
+      btntext4 = document.getElementById("ansbtn4").innerHTML = "Arthur";
       break;
 
     case 7:
-      document.getElementById("question").innerHTML =
-        "Met wie gaat Arthur drinken?";
+      document.getElementById("question").innerHTML ="Met wie gaat Arthur drinken?";
       btntext1 = document.getElementById("ansbtn1").innerHTML = "Lenny";
       btntext2 = document.getElementById("ansbtn2").innerHTML = "Hosea";
       btntext3 = document.getElementById("ansbtn3").innerHTML = "Javier";
@@ -79,8 +76,7 @@ function questionUpdate(questionNumber) {
       break;
 
     case 8:
-      document.getElementById("question").innerHTML =
-        "Bij welke locatie is je kamp in Chapter 2?";
+      document.getElementById("question").innerHTML ="Bij welke locatie is je kamp in Chapter 2?";
       btntext1 = document.getElementById("ansbtn1").innerHTML = "Strawberry";
       btntext2 = document.getElementById("ansbtn2").innerHTML = "Rhodes";
       btntext3 = document.getElementById("ansbtn3").innerHTML = "Valentine";
@@ -88,19 +84,15 @@ function questionUpdate(questionNumber) {
       break;
 
     case 9:
-      document.getElementById("question").innerHTML =
-        "Hoe heet de eerste missie?";
-      btntext1 = document.getElementById("ansbtn1").innerHTML =
-        "Outlaws from the West";
-      btntext2 = document.getElementById("ansbtn2").innerHTML = "Old Friends";
-      btntext3 = document.getElementById("ansbtn3").innerHTML =
-        "Eastward Bound";
-      btntext4 = document.getElementById("ansbtn4").innerHTML = "A Quiet Time";
+      document.getElementById("question").innerHTML ="Welk dier zit niet in de game?";
+      btntext1 = document.getElementById("ansbtn1").innerHTML ="Nijlpaard";
+      btntext2 = document.getElementById("ansbtn2").innerHTML ="Eland";
+      btntext3 = document.getElementById("ansbtn3").innerHTML ="Alligator";
+      btntext4 = document.getElementById("ansbtn4").innerHTML ="Grizzlybeer";
       break;
 
     case 10:
-      document.getElementById("question").innerHTML =
-        "Vanuit waar is de gang gevlucht?";
+      document.getElementById("question").innerHTML ="Vanuit waar is de gang gevlucht?";
       btntext1 = document.getElementById("ansbtn1").innerHTML = "Rhodes";
       btntext2 = document.getElementById("ansbtn2").innerHTML = "Tumbleweed";
       btntext3 = document.getElementById("ansbtn3").innerHTML = "Valentine";
@@ -172,14 +164,20 @@ function ans(a) {
     document.getElementById("resbtn1").style.display = "block";
 
     document.getElementById("questionnum").innerHTML = "Einde!";
-    document.getElementById("question").innerHTML =
-      "Click op de knop onderaan om je resultaten te zien.";
+    document.getElementById("question").innerHTML ="Klik hieronder om je score te bekijken";
   }
-   else {
+  else {
     document.getElementById("questionnum").innerHTML = "Vraag " + qnum + "";
   }
 }
 
+// Score tekst
 function res() {
-  document.getElementById("resultaat").innerHTML = score + "/10";
+  if (username == "") {
+    document.getElementById("resultaat").innerHTML = `Je hebt ${score}/10 goed`;
+  }
+  else{
+    document.getElementById("resultaat").innerHTML = `Score van ${username}: ${score}/10 goed`;
 }
+}
+
