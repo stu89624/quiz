@@ -6,12 +6,14 @@
         <link href="doom.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
+        <a href="index.html"><img class="quizzie" src="quizzie.png" alt="quizzie logo"></a>
         <center>
             <img class="logo" src="doomlogo.png" alt="doom logo">
-        <h1 id="questionnum"></h1>
         <div class="div1">
+            <h1 id="questionnum"></h1>
             <div class="div2">
         <h2 id="question"></h2>
+        <p id="question2"></p>
             </div>
             <br>
             <hr>
@@ -23,6 +25,7 @@
 
         <button id="resbtn1" onclick="res()">Resultaten Zien</button> <!-- This one is hidden by default -->
 
+        <!-- These are hidden as well -->
         <h2 id="ans1"></h2>
         <h2 id="ans2"></h2>
         <h2 id="ans3"></h2>
@@ -33,6 +36,14 @@
         <h2 id="ans8"></h2>
         <h2 id="ans9"></h2>
         <h2 id="ans10"></h2>
+    </div>
+
+    <div id="div3">
+        <h1>Welcome to Hell</h1>
+    </div>
+    <div id="div4">
+        <h2>DOOM wordt gezien als een van de belangrijkste games ooit gemaakt.</h2>
+        <button id="startbtn1" onclick="start()">Begin de Quiz!</button
     </div>
     </center>
     <script src="doom.js"></script>

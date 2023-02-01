@@ -26,51 +26,64 @@ document.getElementById("questionnum").innerHTML = "Vraag " + qnum + "";
 function questionUpdate(questionNumber) {
     switch(questionNumber){
         case 1:
-            document.getElementById("question").innerHTML = "Er vlogen 2 crocodillen. Een is blauw, de tweede naar het noorden. Hoe oud is de egel?";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 1.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 1.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 1.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 1.4";
+            document.getElementById("question").innerHTML = "In welk jaar kwam het eerste DOOM game uit?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "1993";//#
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "1994";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "2016";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "1999";
+            btnsize();
             break;
 
         case 2:
-            document.getElementById("question").innerHTML = "vraag text 2";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 2.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 2.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 2.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 2.4";
+            let img1 = new Image;
+            img1.src = "demon1.webp";
+
+            document.getElementById("question").innerHTML = "Wat is de naam van deze demon?";
+            document.getElementById("question2").appendChild(img1);
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Hellknight";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Baron of Hell";//#
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Imp";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Hell Lord";
             break;
         
         case 3:
-            document.getElementById("question").innerHTML = "vraag text 3";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 3.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 3.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 3.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 3.4";
+            document.getElementById("question").innerHTML = "Hoeveel wapens waren er in de eerste DOOM game?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "8";//#
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "10";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "6";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "5";
+            btnsize();
             break;
     
         case 4:
-            document.getElementById("question").innerHTML = "vraag text 4";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 4.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 4.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 4.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 4.4";
+            let img2 = new Image;
+            img2.src = "weapon1.webp";
+
+            document.getElementById("question").innerHTML = "Wat is de naam van deze wapen?";
+            document.getElementById("question2").appendChild(img2);
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Plasmagun";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Chaingun";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "BFG 9000";//#
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Rocket Launcher";
+            btnsize();
             break;
             
         case 5:
             document.getElementById("question").innerHTML = "vraag text 5";
             btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 5.1";
             btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 5.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 5.3";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 5.3";//#
             btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 5.4";
+            btnsize();
             break;
 
         case 6:
             document.getElementById("question").innerHTML = "vraag text 6";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 6.1";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 6.1";//#
             btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 6.2";
             btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 6.3";
             btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 6.4";
+            btnsize();
             break;
         
         case 7:
@@ -78,7 +91,8 @@ function questionUpdate(questionNumber) {
             btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 7.1";
             btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 7.2";
             btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 7.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 7.4";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 7.4";//#
+            btnsize();
             break;
     
         case 8:
@@ -86,7 +100,8 @@ function questionUpdate(questionNumber) {
             btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 8.1";
             btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 8.2";
             btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 8.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 8.4";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 8.4";//#
+            btnsize();
             break;
             
         case 9:
@@ -94,15 +109,17 @@ function questionUpdate(questionNumber) {
             btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 9.1";
             btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 9.2";
             btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 9.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 9.4";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 9.4";//#
+            btnsize();
             break;
         
         case 10:
             document.getElementById("question").innerHTML = "vraag text 10";
             btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 10.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 10.2";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 10.2";//#
             btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 10.3";
             btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 10.4";
+            btnsize();
             break;
                 
                 
@@ -112,6 +129,8 @@ function questionUpdate(questionNumber) {
 questionUpdate(qnum);
 
 function ans(a){
+
+    document.getElementById("question2").innerHTML = ""; //remove the image
 
     switch(a) {
         case 1:
@@ -203,4 +222,69 @@ function ans(a){
         document.getElementById("ans8").style.display = "block";
         document.getElementById("ans9").style.display = "block";
         document.getElementById("ans10").style.display = "block";
+    }
+
+    function start(){
+        document.getElementById("div3").style.display = "none";
+        document.getElementById("div4").style.display = "none";
+
+        let elements1 = document.getElementsByClassName('div1');
+        for(let i=0; i<elements1.length; i++) { 
+        elements1[i].style.display='block';
+        }
+
+        let elements2 = document.getElementsByClassName('div2');
+        for(let i=0; i<elements2.length; i++) { 
+        elements2[i].style.display='block';
+        }
+    }
+
+    function fadein1(){
+        let elements1 = document.getElementsByClassName('logo');
+        for(let i=0; i<elements1.length; i++) { 
+        elements1[i].style.opacity='1';
+        elements1[i].style.transform='translate3d(0, 0, 0)';
+        }
+    }
+
+    function fadein2(){
+        document.getElementById("div3").style.opacity='1';
+        document.getElementById("div3").style.transform='translate3d(0, 0, 0)';
+
+        document.getElementById("div4").style.opacity='1';
+        document.getElementById("div4").style.transform='translate3d(0, 0, 0)';
+    }
+
+    setTimeout(fadein1,1000);
+    setTimeout(fadein2,1500);
+
+
+    function btnsize(){
+        if (btntext1.length > 13){
+            document.getElementById("ansbtn1").style.fontSize = "2vw";
+        }
+        else {
+            document.getElementById("ansbtn1").style.fontSize = "4vw";
+        }
+
+        if (btntext2.length > 13){
+            document.getElementById("ansbtn2").style.fontSize = "2vw";
+        }
+        else {
+            document.getElementById("ansbtn2").style.fontSize = "4vw";
+        }
+
+        if (btntext3.length > 13){
+            document.getElementById("ansbtn3").style.fontSize = "2vw";
+        }
+        else {
+            document.getElementById("ansbtn3").style.fontSize = "4vw";
+        }
+
+        if (btntext4.length > 13){
+            document.getElementById("ansbtn4").style.fontSize = "2vw";
+        }
+        else {
+            document.getElementById("ansbtn4").style.fontSize = "4vw";
+        }
     }
