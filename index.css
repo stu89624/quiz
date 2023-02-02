@@ -1,58 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(50, 50, 50);
-    height: 100%;
-    width: 100%;
-    /* overflow: hidden; */
+  background-color: #2d2d2d;
+  background-image: url("bodybg2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  font-family: 'Rubik', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
 }
 
 .quizzie {
-    width: 200px;
-    position: absolute;
-  }
+  width: 200px;
+  position:absolute;
+  left:10px;
+  top:10px;
+
+}
 
 .center {
-    margin: auto;
-    width: 100%;
-    padding: 10px;
-    height: 600px;
-    position: fixed;
-    bottom: 100px;
-    display: flex;
-  }
-
-  .card
-  {
-    margin: auto;
-    width: 50%;
-  float:left;
-  width: 25%;
-  }
-
-
-.card img {
-   width: 500px;
-   height: 600px;
-   border-radius: 20px;
-   border: 3px solid white;
-}
-
-.beginbtn{
-    margin: auto;
-    width: 50%;
-    height: 60px;
-    font-size: 30px;
-    border-radius: 10px;
-    border: none;
-    background-color: white;
-}
-
-.beginbtn:hover{
-    background-color: rgb(178, 178, 178);
+  margin: auto;
+  width: 88%;
+  padding: 10px;
+  height: 600px;
+  display: flex;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+  position: fixed;
 }
 
 
+.text{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+
+.text h1{
+  font-size: 80px;
+}
+
+.text h2{
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+
+/*
+================================
+        Card 1 RDR2
+================================
+*/
+
+.card1, .card2, .card3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+.flip-card-back p {
+  margin: auto;
+  width: 80%;
+  text-align: left;
+}
+
+.flip-card-front img {
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+
+button {
+  width: 300px;
+  height: 60px;
+  margin-top: 30px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  font-size: 25px;
+  transition: 0.6s;
+}
+
+button:hover {
+  background-color: rgb(100, 100, 100);
+  cursor: pointer;
+}

@@ -23,11 +23,14 @@ body {
 hr {
   border: 1px solid white;
   border-radius: 50px;
+  width: 80%;
 }
 
 .quizzie {
   width: 200px;
-  position: absolute;
+  position:absolute;
+  left:10px;
+  top:10px;
 }
 
 h1 {
@@ -45,20 +48,62 @@ h2 {
 
 .logo {
   margin-top: 2%;
-  width: 300px;
+  width: 400px;
+
+  opacity: 0;
+  transform: translate3d(0, -50px, 0);
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
 }
 
 .div1 {
-  clear: both;
-  width: 88%;
-  height: auto;
+  opacity: 0;
+  transform: translate3d(0, 50px, 0);
+  transition: 0.5s all ease-in-out;
 }
+
+.div2 {
+  opacity: 0;
+  transform: translate3d(0, -100px, 0);
+  transition: 0.5s all ease-in-out;
+}
+
+.vraagnr{
+  opacity: 0;
+  transform: translate3d(0, -100px, 0);
+  transition: 0.5s all ease-in-out;
+}
+
+
 
 /*
 =================================
              Buttons
 =================================
 */
+
+button{
+  cursor: pointer;
+}
+
+#naam{
+  position: absolute;
+left:    30px;
+bottom:   30px;
+width: 250px;
+height: 50px;
+border: none;
+border-radius: 50px;
+color: black;
+background-color: white;
+transition: 0.6s;
+font-size: 20px;
+}
+
+#naam:hover{
+background-color: #000000;
+color: white;
+}
 
 #ansbtn1,
 #ansbtn2,
@@ -74,7 +119,7 @@ h2 {
   font-weight: 600;
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 5%;
+  margin-top: 3%;
   width: 350px;
   border-radius: 5px;
 }
@@ -90,7 +135,7 @@ h2 {
   font-weight: 600;
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 5%;
+  margin-top: 2%;
   width: 400px;
   border-radius: 5px;
   display: none;
@@ -99,31 +144,23 @@ h2 {
 #ansbtn1:hover {
   background-color: #8d1711;
 }
+
 #ansbtn2:hover {
   background-color: #8d1711;
 }
+
 #ansbtn3:hover {
   background-color: #8d1711;
 }
+
 #ansbtn4:hover {
   background-color: #8d1711;
 }
+
 #resbtn1:hover {
   background-color: #8d1711;
 }
 
-#ans1,
-#ans2,
-#ans3,
-#ans4,
-#ans5,
-#ans6,
-#ans7,
-#ans8,
-#ans9,
-#ans10 {
-  display: none;
-}
 
 /*
 =================================
@@ -137,4 +174,3 @@ h2 {
   font-size: 80px;
   font-weight: 800;
 }
-
