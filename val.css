@@ -5,13 +5,18 @@ body {
         background-image: url("Jett.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center; 
-        background-size: 100%;
-}
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        font-family: "Poppins", "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+          sans-serif;
+        overflow-x: hidden;
+      }
 
 h1{
         color: white;
-        font-size: 4vw;
+        font-size: 2vw;
 }
 
 h2{
@@ -68,60 +73,24 @@ h2{
         transition: 0.5s all ease-in-out;
 }
 
-#ansbtn1 {
-        background-color: #000000;
-        border: 2px solid;
-        border-image-slice: 1;
-        border-image-source: linear-gradient(to left, #e41146, #f58712);
-        color: white;
-        font-size: 4vw;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 2%;
-        width: 30vw;
-        height: 7vw;
-      }
-
-      #ansbtn2 {
-        background-color: #000000;
-        border: 2px solid;
-        border-image-slice: 1;
-        border-image-source: linear-gradient(to left, #e41146, #f58712);
-        color: white;
-        font-size: 4vw;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 2%;
-        width: 30vw;
-        height: 7vw;
-      }
-
-      #ansbtn3 {
-        background-color: #000000;
-        border: 2px solid;
-        border-image-slice: 1;
-        border-image-source: linear-gradient(to left, #e41146, #f58712);
-        color: white;
-        font-size: 4vw;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 2%;
-        width: 30vw;
-        height: 7vw;
-      }
-      #ansbtn4 {
-        background-color: #000000;
-        border: 2px solid;
-        border-image-slice: 1;
-        border-image-source: linear-gradient(to left, #e41146, #f58712);
-        color: white;
-        font-size: 4vw;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 5%;
-        width: 30vw;
-        height: 7vw;
-      }
+#ansbtn1,
+#ansbtn2,
+#ansbtn3,
+#ansbtn4 {
+  background-color: #6ed3f5;
+  border: 3px solid black;
+  border-image-slice: 1;
+  border-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  font-size: 2vw;
+  font-weight: 600;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  width: 350px;
+  border-radius: 5px;
+}
 
       #resbtn1 {
         background-color: #000000;
@@ -130,10 +99,10 @@ h2{
         border-image-source: linear-gradient(to left, #e41146, #f58712);
         color: white;
         padding: 20px;
-        font-size: 4vw;
+        font-size: 2vw;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 5%;
+        margin-top: 2%;
         display: none;
       }
 
@@ -144,19 +113,19 @@ h2{
         border-image-source: linear-gradient(to left, #e41146, #f58712);
         color: white;
         padding: 20px;
-        font-size: 4vw;
+        font-size: 2vw;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 5%;
+        margin-top: 2%;
       }
 
 
-#ansbtn1:hover {background-color: #530400;}  
-#ansbtn2:hover {background-color: #530400;}  
-#ansbtn3:hover {background-color: #530400;}  
-#ansbtn4:hover {background-color: #530400;}
-#resbtn1:hover {background-color: #530400;}
-#startbtn1:hover {background-color: #530400;}
+#ansbtn1:hover {background-color: #082759;}  
+#ansbtn2:hover {background-color: #082759;}  
+#ansbtn3:hover {background-color: #082759;}  
+#ansbtn4:hover {background-color: #082759;}
+#resbtn1:hover {background-color: #082759;}
+#startbtn1:hover {background-color: #082759;}
 
 #ans1, #ans2, #ans3, #ans4, #ans5, #ans6, #ans7, #ans8, #ans9, #ans10 {
         display: none;

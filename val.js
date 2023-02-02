@@ -1,3 +1,4 @@
+
 let qnum = 1;
 let question = "";
 let btntext1 = "";
@@ -38,7 +39,6 @@ function questionUpdate(questionNumber) {
          
 
             document.getElementById("question").innerHTML = "Wat was de naam die Valorant kreeg voor Valorant";
-            document.getElementById("question2").appendChild(img1);
             btntext1 = document.getElementById("ansbtn1").innerHTML = "Valorant";
             btntext2 = document.getElementById("ansbtn2").innerHTML = "Project A";//#
             btntext3 = document.getElementById("ansbtn3").innerHTML = "Project X";
@@ -84,38 +84,38 @@ function questionUpdate(questionNumber) {
             break;
         
         case 7:
-            document.getElementById("question").innerHTML = "vraag text 7";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 7.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 7.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 7.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 7.4";//#
+            document.getElementById("question").innerHTML = "Wat is Cyphers afkomst?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Egypte";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Afrika";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Rusland";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Marokko";//#
             btnsize();
             break;
     
         case 8:
-            document.getElementById("question").innerHTML = "vraag text 8";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 8.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 8.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 8.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 8.4";//#
+            document.getElementById("question").innerHTML = "Wat is de voiceline van Phoenix?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Here comes the party";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Open up the sky";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Watch them run";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Jokes over your dead";//#
             btnsize();
             break;
             
         case 9:
-            document.getElementById("question").innerHTML = "vraag text 9";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 9.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 9.2";
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 9.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 9.4";//#
+            document.getElementById("question").innerHTML = "Wie is de nieuwste agent?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Neon";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Fade";
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Astra";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Harbor";//#
             btnsize();
             break;
         
         case 10:
-            document.getElementById("question").innerHTML = "vraag text 10";
-            btntext1 = document.getElementById("ansbtn1").innerHTML = "Antwoord 10.1";
-            btntext2 = document.getElementById("ansbtn2").innerHTML = "Antwoord 10.2";//#
-            btntext3 = document.getElementById("ansbtn3").innerHTML = "Antwoord 10.3";
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Antwoord 10.4";
+            document.getElementById("question").innerHTML = "Wat is de hoogste rank?";
+            btntext1 = document.getElementById("ansbtn1").innerHTML = "Diamond";
+            btntext2 = document.getElementById("ansbtn2").innerHTML = "Radiant";//#
+            btntext3 = document.getElementById("ansbtn3").innerHTML = "Immortal";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "Ascendent";
             btnsize();
             break;
                 
@@ -127,7 +127,7 @@ questionUpdate(qnum);
 
 function ans(a){
 
-    document.getElementById("question2").innerHTML = ""; //remove the image
+    document.getElementById("question2").innerHTML = "";
 
     switch(a) {
         case 1:
@@ -261,27 +261,27 @@ function ans(a){
             document.getElementById("ansbtn1").style.fontSize = "2vw";
         }
         else {
-            document.getElementById("ansbtn1").style.fontSize = "4vw";
+            document.getElementById("ansbtn1").style.fontSize = "2vw";
         }
 
         if (btntext2.length > 13){
             document.getElementById("ansbtn2").style.fontSize = "2vw";
         }
         else {
-            document.getElementById("ansbtn2").style.fontSize = "4vw";
+            document.getElementById("ansbtn2").style.fontSize = "2vw";
         }
 
         if (btntext3.length > 13){
             document.getElementById("ansbtn3").style.fontSize = "2vw";
         }
         else {
-            document.getElementById("ansbtn3").style.fontSize = "4vw";
+            document.getElementById("ansbtn3").style.fontSize = "2vw";
         }
 
         if (btntext4.length > 13){
             document.getElementById("ansbtn4").style.fontSize = "2vw";
         }
         else {
-            document.getElementById("ansbtn4").style.fontSize = "4vw";
+            document.getElementById("ansbtn4").style.fontSize = "2vw";
         }
     }
