@@ -27,7 +27,7 @@ document.getElementById("questionnum").innerHTML = "Vraag " + qnum + "";
 function questionUpdate(questionNumber) {
     let img1 = new Image;
     img1.height = 200;
-    img1.src = "demon1.webp";
+    img1.src = "media/demon1.webp";
     switch(questionNumber){
         case 1:
             document.getElementById("question").innerHTML = "In welk jaar kwam het eerste DOOM game uit?";
@@ -59,7 +59,7 @@ function questionUpdate(questionNumber) {
             break;
     
         case 4:
-            img1.src = "weapon1.webp";
+            img1.src = "media/weapon1.webp";
 
             document.getElementById("question").innerHTML = "Wat is de naam van deze wapen?";
             document.getElementById("question2").appendChild(img1);
@@ -81,7 +81,7 @@ function questionUpdate(questionNumber) {
             break;
 
         case 6:
-            img1.src = "weapon2.webp";
+            img1.src = "media/weapon2.webp";
 
             document.getElementById("question").innerHTML = "Wat is de naam van deze wapen?";
             document.getElementById("question2").appendChild(img1);
@@ -93,7 +93,7 @@ function questionUpdate(questionNumber) {
             break;
         
         case 7:
-            img1.src = "demon2.webp";
+            img1.src = "media/demon2.webp";
 
             document.getElementById("question").innerHTML = "Wat is de naam van deze demon?";
             document.getElementById("question2").appendChild(img1);
