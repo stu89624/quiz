@@ -20,10 +20,10 @@ h2{
 
 
 .quizzie {
-        margin-top: 2%;
         width: 200px;
-        margin-bottom: 6%;
-        position: absolute;
+        position:absolute;
+        left:10px;
+        top:10px;
 }
 
 .logo {

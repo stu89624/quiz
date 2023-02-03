@@ -61,7 +61,7 @@ function questionUpdate(questionNumber) {
             btntext1 = document.getElementById("ansbtn1").innerHTML = "Marshal";
             btntext2 = document.getElementById("ansbtn2").innerHTML = "Vandal";
             btntext3 = document.getElementById("ansbtn3").innerHTML = "Phantom";//#
-            btntext4 = document.getElementById("ansbtn4").innerHTML = "Marshal";
+            btntext4 = document.getElementById("ansbtn4").innerHTML = "AWP";
             btnsize();
             break;
             
@@ -131,14 +131,12 @@ function ans(a){
 
     switch(a) {
         case 1:
-            if (qnum == 3){
-                result1 = true;
-            }
-            if (qnum == 3){
-                result3 = true;
-            }
             if (qnum == 6){
                 result6 = true;
+            }
+
+            if (qnum == 3){
+                result3 = true;
             }
             qnum ++;
             questionUpdate(qnum);
@@ -148,6 +146,7 @@ function ans(a){
             if (qnum == 2){
                 result2 = true;
             }
+
             if (qnum == 10){
                 result10 = true;
             }
@@ -156,11 +155,12 @@ function ans(a){
             break;
 
         case 3:
+            if (qnum == 1){
+                result1 = true;
+            }
+
             if (qnum == 4){
                 result4 = true;
-            }
-            if (qnum == 5){
-                result5 = true;
             }
             qnum ++;
             questionUpdate(qnum);
@@ -172,6 +172,7 @@ function ans(a){
             if (qnum == 8){
                 result8 = true;
             }
+
             if (qnum == 9){
                 result9 = true;
             }

@@ -26,10 +26,10 @@ h2{
 
 
 .quizzie {
-        margin-top: 2%;
         width: 200px;
-        margin-bottom: 6%;
-        position: absolute;
+        position:absolute;
+        left:10px;
+        top:10px;
 }
 
 .logo {
@@ -93,10 +93,9 @@ h2{
 }
 
       #resbtn1 {
-        background-color: #000000;
-        border: 2px solid;
         border-image-slice: 1;
-        border-image-source: linear-gradient(to left, #e41146, #f58712);
+        background-color: #6ed3f5;
+        border: 3px solid black;
         color: white;
         padding: 20px;
         font-size: 2vw;
@@ -107,10 +106,9 @@ h2{
       }
 
       #startbtn1 {
-        background-color: #000000;
-        border: 2px solid;
+        background-color: #6ed3f5;
+        border: 3px solid black;
         border-image-slice: 1;
-        border-image-source: linear-gradient(to left, #e41146, #f58712);
         color: white;
         padding: 20px;
         font-size: 2vw;
