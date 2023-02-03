@@ -1,1 +1,2 @@
-# quiz
+# Quiz creators: Mark, Aman, Jayden
+

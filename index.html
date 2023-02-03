@@ -14,7 +14,7 @@
     <a href="index.html"><img class="quizzie" src="quizzie.png" alt="logo" /></a>
     <div class="text">
         <h1>Quizzie</h1>
-        <h2>Kies een quiz!</h2>
+        <h2>Kies hieronder over welke game je een quiz wilt spelen</h2>
     </div>
     <div class="center">
 
@@ -54,12 +54,11 @@
                             bendeleden dreigt de bende uiteen te vallen, dus staat Arthur voor de moeilijke keuze tussen
                             zijn eigen idealen en zijn trouw aan de bende die hem heeft grootgebracht.</p>
                         <a href="rdr2.html"><button>Start quiz</button></a>
-                        <h3 class="creator">(by: Jayden Pols)</h3>
+                        <h3 onclick="info1()" class="creator">(Klik hier voor info over de maker)</h3>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!--
         =====================
@@ -95,7 +94,7 @@
                         </p>
                         <br>
                         <a href="val.html"><button>Start quiz</button></a>
-                        <h3 class="creator">(by: Aman Singh)</h3>
+                        <h3 onclick="info2()" class="creator">(Klik hier voor info over de maker)</h3>
                     </div>
                 </div>
             </div>
@@ -118,25 +117,28 @@
                         <br>
                         <h1>Doom</h1>
                         <br>
-                        <p>Doom is ontwikkeld door id Software. De spellen zijn allemaal first person
-                            shooters. Programmer John Carmack deed tijdens de productie van het vervolg op dit spel,
-                            onderzoek naar een verbeterde spelengine voor realistischere 3D-omgevingen.
+                        <p>Doom wordt gezien als een van de belangrijkste games ooit. Ontworpen door een klein team
+                            genaamd "id software" in de jaren 90, Doom legde de weg voor een nieuw game genre: "First
+                            Person Shooter".
+                            Het spel was een enorm success. In 1995 waren er meer PCs met Doom dan met Windows.
+                            Je hebt wapens en je hebt demons. Je pakt een wapen en schiet alles wat beweegt. Je rent
+                            enorm snel
+                            en je hoeft niet te reloaden.
                             <br>
                             <br>
-                            Het eerste spel, Doom, kwam uit in 1993, en was meteen een succes. Doom werd in 1994
-                            opgevolgd door Doom II: Hell on Earth. Na Doom II zijn er nog een aantal Doom titels
-                            uitgekomen op verschillende platformen.
+                            Voor meer dan 10 jaar was er een stilte in de Doom
+                            franchise. Maar in 2016 kwam DOOM keihard terug met een nieuwe entree in de series
+                            genaamd... DOOM.
                             <br>
                             <br>
-                            De eerste twee spellen maakten gebruik van de doom-engine, welke later ook voor andere
-                            spellen werd gebruikt.
+                            DOOM was terug. Met een nieuw uitzicht en de oude gameplay met alsnog veel innovaties erin.
+                            Het was een van de grootste comebacks in gaming geschiedenis.
+                            Niet zo lang na de reboot kwam DOOM ETERNAL uit in 2020. Nog sneller en nog meer metal.
                             <br>
                             <br>
-                            De protagonist van alle spellen wordt de Doomguy genoemd. Hij werkt in de meeste gevallen
-                            voor een organisatie genaamd de Union Aerospace Corporation.
                         </p>
                         <a href="doom.html"><button>Start quiz</button></a>
-                        <h3 class="creator">(by: Mark Mihailenko)</h3>
+                        <h3 onclick="info3()" class="creator">(Klik hier voor info over de maker)</h3>
                     </div>
                 </div>
             </div>
@@ -144,18 +146,79 @@
 
     </div>
 
-    <!-- <section class="card c1">
-            <img src="rdrcard.jpg" alt="red-dead-redemption">
-        </section>
 
-        <section class="card c2">
-            <img src="valcard.jpg" alt="valorant">
-        </section>
+    </section>
 
-        <section class="card c3">
-            <img src="doomcard.jpg" alt="doom">
-        </section> -->
 
+    <!--
+    =====================
+        info Jayden
+    =====================
+-->
+    <div id="popup1">
+        <span onclick="x1()" id="x">x</span>
+        <p>Quiz Maker: <strong>Jayden Pols</strong> 
+            <br>
+            <br>
+            Dit is een van mijn favoriete games en naar mijn mening de beste storygame ooit
+            gemaakt.
+            <br>
+            <br>
+             Ik heb de game 3 keer volledig uitgespeeld, alleen jammer dat Rockstar geen aandacht besteed aan de
+            online modus aangezien deze veel potentie had en veel mensen hoopten op goede updates.
+            <br>
+            <br>
+            Deze game heeft veel indruk op mij achter gelaten en daarom zal ik me deze game over 10 jaar waarschijnlijk nog goed kunnen herrinneren.
+
+        </p>
+    </div>
+
+
+    <!--
+    =====================
+        info Aman
+    =====================
+-->
+    <div id="popup2">
+        <span onclick="x2()" id="x">x</span>
+        <p>Quiz Maker: <strong>Aman Singh</strong> 
+            <br>
+            <br>
+            Ik heb voor Valorant gekozen omdat ik het zelf een erg leuke game vindt.
+            <br>
+            Het is op dit moment mijn favoriete shooter game. Het is een 5 tegen 5 game dus ik speel vaak met dezelfde teamgenoten
+            waardoor we goed op elkaar ingespeeld zijn.
+            <br>
+            <br>
+            Iets wat erg leuk is aan de game zijn de "agents", dit zijn de karakters waar je mee kan spelen en ze hebben allemaal 
+            verschillende abilities waardoor de game nooit hetzelfde is.
+
+        </p>
+    </div>
+
+<!--
+    =====================
+        info Mark
+    =====================
+-->
+
+    <div id="popup3">
+        <span onclick="x3()" id="x">x</span>
+        <p>Quiz Maker: <strong>Mark Mihailenko</strong> 
+            <br>
+            <br>
+            Doom is een van mijn favoriete games ooit gemaakt.
+            <br>
+            De classics en de reboot zijn geweldige games en ik heb enorm respect voor iedereen die er aan heeft gewerkt. 
+            <br>
+            <br> Ik speel de games nog steeds en mijn droom baan is eigenlijk om bij
+            id software te werken voor de volgende grote game die voor altijd zal worden onthouden.
+        </p>
+    </div>
+    <span onclick="blur()" id="blur"></span>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>

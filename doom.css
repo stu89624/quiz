@@ -11,12 +11,21 @@ body {
 h1{
         color: white;
         font-size: 4vw;
+        font-family: "MS Gothic";
 }
 
 h2{
         color: white;
         font-size: 2vw;
+        font-family: "MS UI Gothic";
 }
+
+h3{
+        color: white;
+        font-size: 1.5vw;
+        font-family: "MS UI Gothic";
+}
+
 
 
 .quizzie {
@@ -35,6 +44,10 @@ h2{
         transform: translate3d(0, -50px, 0);  
         cursor: pointer;
         transition: 0.5s all ease-in-out;
+}
+
+.ary {
+        width: 200px;
 }
 
 .div1 {
@@ -60,11 +73,22 @@ h2{
     }
 #div4 {
         margin-top: 5%;
+        width: 88%;
 
         opacity: 0;
         transform: translate3d(0, -50px, 0); 
         cursor: pointer;
         transition: 0.5s all ease-in-out;
+}
+
+#div5 {
+        margin-top: 10%;
+        width: 40%;
+}
+
+
+#question2 {
+        opacity: 0;
 }
 
 #ansbtn1 {
@@ -73,10 +97,10 @@ h2{
         border-image-slice: 1;
         border-image-source: linear-gradient(to left, #e41146, #f58712);
         color: white;
-        font-size: 4vw;
+        font-size: 2vw;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 10%;
+        margin-top: 2%;
         width: 30vw;
         height: 7vw;
       }
@@ -87,10 +111,10 @@ h2{
         border-image-slice: 1;
         border-image-source: linear-gradient(to left, #e41146, #f58712);
         color: white;
-        font-size: 4vw;
+        font-size: 2vw;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 10%;
+        margin-top: 2%;
         width: 30vw;
         height: 7vw;
       }
@@ -101,10 +125,10 @@ h2{
         border-image-slice: 1;
         border-image-source: linear-gradient(to left, #e41146, #f58712);
         color: white;
-        font-size: 4vw;
+        font-size: 2vw;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 10%;
+        margin-top: 2%;
         width: 30vw;
         height: 7vw;
       }
@@ -114,10 +138,10 @@ h2{
         border-image-slice: 1;
         border-image-source: linear-gradient(to left, #e41146, #f58712);
         color: white;
-        font-size: 4vw;
+        font-size: 2vw;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 10%;
+        margin-top: 2%;
         width: 30vw;
         height: 7vw;
       }
@@ -149,6 +173,20 @@ h2{
         margin-top: 10%;
       }
 
+      #startbtn2 {
+        background-color: #000000;
+        border: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #e41146, #f58712);
+        color: white;
+        padding: 20px;
+        font-size: 4vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        display: none;
+      }
+
 
 #ansbtn1:hover {background-color: #530400;}  
 #ansbtn2:hover {background-color: #530400;}  
@@ -156,17 +194,39 @@ h2{
 #ansbtn4:hover {background-color: #530400;}
 #resbtn1:hover {background-color: #530400;}
 #startbtn1:hover {background-color: #530400;}
+#startbtn2:hover {background-color: #530400;}
 
-#ans1, #ans2, #ans3, #ans4, #ans5, #ans6, #ans7, #ans8, #ans9, #ans10 {
+#ans1, #ans2, #ans3, #ans4, #ans5, #ans6, #ans7, #ans8, #ans9, #ans10, #score {
         display: none;
 }
 
-
-.fadeIn {
-        opacity: 0;
-        transform: translate3d(0, -50px, 0); /* ADDED - start y position as -50px */
-      
-        cursor: pointer;
-        transition: 0.25s all ease-in-out;
-      }
-
+#ans1 b {
+        color: #ff0000;
+}
+#ans2 b {
+        color: #ff0000;
+}
+#ans3 b {
+        color: #ff0000;
+}
+#ans4 b {
+        color: #ff0000;
+}
+#ans5 b {
+        color: #ff0000;
+}
+#ans6 b {
+        color: #ff0000;
+}
+#ans7 b {
+        color: #ff0000;
+}
+#ans8 b {
+        color: #ff0000;
+}
+#ans9 b {
+        color: #ff0000;
+}
+#ans10 b {
+        color: #ff0000;
+}

@@ -251,10 +251,19 @@ function fadein4() {
   }
 }
 
+function fadein5() {
+  let elements1 = document.getElementsByClassName('restartbtn');
+  for (let i = 0; i < elements1.length; i++) {
+    elements1[i].style.opacity = '1';
+    elements1[i].style.transform = 'translate3d(0, 0, 0)';
+  }
+}
+
 setTimeout(fadein1, 800);
 setTimeout(fadein2, 1200);
 setTimeout(fadein3, 1600);
 setTimeout(fadein4, 1600);
+setTimeout(fadein5, 3000);
 
 
 let coll = document.getElementsByClassName("collapsible");

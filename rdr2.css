@@ -86,6 +86,33 @@ button{
   cursor: pointer;
 }
 
+.fa{
+  margin-left: 10px;
+}
+
+.restartbtn{
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  font-weight: 600;
+  top: 0;
+  right: 0;
+  height: 40px;
+  border-bottom-left-radius: 10px;
+  transition: 0.6s;
+  opacity: 0;
+  transform: translate3d(100px, 0, 0);
+  transition: 0.8s all ease-in-out;
+}
+
+.restartbtn:hover{
+  background-color: black;
+  color: white;
+}
+
 #naam{
   position: absolute;
 left:    30px;
@@ -175,7 +202,7 @@ color: white;
   font-weight: 800;
 }
 
-/* Style the button that is used to open and close the collapsible content */
+
 .collapsible{
   background-color: #eee;
   color: rgb(27, 27, 27);
@@ -217,7 +244,7 @@ color: white;
 }
 
 
-
+/* score kleuren */
 .kleur{
   color: red;
 }
@@ -225,3 +252,4 @@ color: white;
 .dtscore {
   color: green;
 }
+
