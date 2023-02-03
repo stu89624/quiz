@@ -1,12 +1,22 @@
 let username = window.prompt("Vul je naam in");
 
-
 let qnum = 1;
 let question = "";
 let btntext1 = "";
 let btntext2 = "";
 let btntext3 = "";
 let btntext4 = "";
+
+let result1 = "Fout";
+let result2 = "Fout";
+let result3 = "Fout";
+let result4 = "Fout";
+let result5 = "Fout";
+let result6 = "Fout";
+let result7 = "Fout";
+let result8 = "Fout";
+let result9 = "Fout";
+let result10 = "Fout";
 
 let score = 0;
 
@@ -107,9 +117,13 @@ function ans(a) {
   switch (a) {
     case 1:
       if (qnum == 9) {
+        result9 = "Goed";
+        document.getElementById("detailscore9").classList.add("dtscore")
         score++;
       }
       if (qnum == 7) {
+        result7 = "Goed";
+        document.getElementById("detailscore7").classList.add("dtscore")
         score++;
       }
       qnum++;
@@ -118,12 +132,18 @@ function ans(a) {
 
     case 2:
       if (qnum == 1) {
+        result1 = "Goed";
+        document.getElementById("detailscore1").classList.add("dtscore")
         score++;
       }
       if (qnum == 5) {
+        result5 = "Goed";
+        document.getElementById("detailscore5").classList.add("dtscore")
         score++;
       }
       if (qnum == 3) {
+        result3 = "Goed";
+        document.getElementById("detailscore3").classList.add("dtscore")
         score++;
       }
       qnum++;
@@ -132,12 +152,18 @@ function ans(a) {
 
     case 3:
       if (qnum == 8) {
+        result8 = "Goed";
+        document.getElementById("detailscore8").classList.add("dtscore")
         score++;
       }
       if (qnum == 4) {
+        result4 = "Goed";
+        document.getElementById("detailscore4").classList.add("dtscore")
         score++;
       }
       if (qnum == 6) {
+        result6 = "Goed";
+        document.getElementById("detailscore6").classList.add("dtscore")
         score++;
       }
       qnum++;
@@ -145,9 +171,13 @@ function ans(a) {
       break;
     case 4:
       if (qnum == 2) {
+        result2 = "Goed";
+        document.getElementById("detailscore2").classList.add("dtscore")
         score++;
       }
       if (qnum == 10) {
+        result10 = "Goed";
+        document.getElementById("detailscore10").classList.add("dtscore")
         score++;
       }
       qnum++;
@@ -162,6 +192,7 @@ function ans(a) {
     document.getElementById("ansbtn4").style.display = "none";
 
     document.getElementById("resbtn1").style.display = "block";
+    document.getElementById("collapsible").style.display = "block";
 
     document.getElementById("questionnum").innerHTML = "Einde!";
     document.getElementById("question").innerHTML = "Klik hieronder om je score te bekijken";
@@ -220,9 +251,37 @@ function fadein4() {
   }
 }
 
-
-
 setTimeout(fadein1, 800);
 setTimeout(fadein2, 1200);
 setTimeout(fadein3, 1600);
 setTimeout(fadein4, 1600);
+
+
+let coll = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function detail() {
+  document.getElementById("detailscore1").innerHTML = "Vraag 1: " + `<strong>${result1}</strong>`;
+  document.getElementById("detailscore2").innerHTML = "Vraag 2: " + `<strong>${result2}</strong>`;
+  document.getElementById("detailscore3").innerHTML = "Vraag 3: " + `<strong>${result3}</strong>`;
+  document.getElementById("detailscore4").innerHTML = "Vraag 4: " + `<strong>${result4}</strong>`;
+  document.getElementById("detailscore5").innerHTML = "Vraag 5: " + `<strong>${result5}</strong>`;
+  document.getElementById("detailscore6").innerHTML = "Vraag 6: " + `<strong>${result6}</strong>`;
+  document.getElementById("detailscore7").innerHTML = "Vraag 7: " + `<strong>${result7}</strong>`;
+  document.getElementById("detailscore8").innerHTML = "Vraag 8: " + `<strong>${result8}</strong>`;
+  document.getElementById("detailscore9").innerHTML = "Vraag 9: " + `<strong>${result9}</strong>`;
+  document.getElementById("detailscore10").innerHTML = "Vraag 10: " + `<strong>${result10}</strong>`;
+}
+
