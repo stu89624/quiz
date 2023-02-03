@@ -240,3 +240,18 @@ button:hover {
 #x:hover{
   color: rgb(169, 2, 2);
 }
+
+#git {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  text-shadow: 2px 2px 4px #000000;
+  color: rgb(0, 149, 255);
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#git:hover {
+  color: rgb(0, 94, 255);
+}
