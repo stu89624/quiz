@@ -6,16 +6,18 @@ let btntext2 = "";
 let btntext3 = "";
 let btntext4 = "";
 
-let result1 = false;
-let result2 = false;
-let result3 = false;
-let result4 = false;
-let result5 = false;
-let result6 = false;
-let result7 = false;
-let result8 = false;
-let result9 = false;
-let result10 = false;
+let score = 0;
+
+let result1 = "fout";
+let result2 = "fout";
+let result3 = "fout";
+let result4 = "fout";
+let result5 = "fout";
+let result6 = "fout";
+let result7 = "fout";
+let result8 = "fout";
+let result9 = "fout";
+let result10 = "fout";
 
 document.getElementById("ansbtn1").innerHTML = btntext1;
 document.getElementById("ansbtn2").innerHTML = btntext2;
@@ -132,11 +134,13 @@ function ans(a){
     switch(a) {
         case 1:
             if (qnum == 6){
-                result6 = true;
+                result6 = "goed";
+                score ++;
             }
 
             if (qnum == 3){
-                result3 = true;
+                result3 = "goed";
+                score ++;
             }
             qnum ++;
             questionUpdate(qnum);
@@ -144,11 +148,13 @@ function ans(a){
 
         case 2:
             if (qnum == 2){
-                result2 = true;
+                result2 = "goed";
+                score ++;
             }
 
             if (qnum == 10){
-                result10 = true;
+                result10 = "goed";
+                score ++;
             }
             qnum ++;
             questionUpdate(qnum);
@@ -156,25 +162,35 @@ function ans(a){
 
         case 3:
             if (qnum == 1){
-                result1 = true;
+                result1 = "goed";
+                score ++;
             }
 
             if (qnum == 4){
-                result4 = true;
+                result4 = "goed";
+                score ++;
+            }
+
+            if (qnum == 5){
+                result5 = "goed";
+                score ++;
             }
             qnum ++;
             questionUpdate(qnum);
             break;
         case 4:
             if (qnum == 7){
-                result7 = true;
+                result7 = "goed";
+                score ++;
             }
             if (qnum == 8){
-                result8 = true;
+                result8 = "goed";
+                score ++;
             }
 
             if (qnum == 9){
-                result9 = true;
+                result9 = "goed";
+                score ++;
             }
             qnum ++;
             questionUpdate(qnum);
@@ -199,6 +215,8 @@ function ans(a){
 }
 
     function res(){
+        document.getElementById("score").innerHTML = "Score: " + score + "/10";
+
         document.getElementById("ans1").innerHTML = "Vraag 1: " + result1;
         document.getElementById("ans2").innerHTML = "Vraag 2: " + result2;
         document.getElementById("ans3").innerHTML = "Vraag 3: " + result3;
@@ -220,6 +238,70 @@ function ans(a){
         document.getElementById("ans8").style.display = "block";
         document.getElementById("ans9").style.display = "block";
         document.getElementById("ans10").style.display = "block";
+
+        if (result1 == "goed"){
+            document.getElementById("ans1").style.color = "green";
+        }
+        if (result2 == "goed"){
+            document.getElementById("ans2").style.color = "green";
+        }
+        if (result3 == "goed"){
+            document.getElementById("ans3").style.color = "green";
+        }
+        if (result4 == "goed"){
+            document.getElementById("ans4").style.color = "green";
+        }
+        if (result5 == "goed"){
+            document.getElementById("ans5").style.color = "green";
+        }
+        if (result6 == "goed"){
+            document.getElementById("ans6").style.color = "green";
+        }
+        if (result7 == "goed"){
+            document.getElementById("ans7").style.color = "green";
+        }
+        if (result8 == "goed"){
+            document.getElementById("ans8").style.color = "green";
+        }
+        if (result9 == "goed"){
+            document.getElementById("ans9").style.color = "green";
+        }
+        if (result10 == "goed"){
+            document.getElementById("ans10").style.color = "green";
+        }
+
+
+
+        if (result1 == "fout"){
+            document.getElementById("ans1").style.color = "red";
+        }
+        if (result2 == "fout"){
+            document.getElementById("ans2").style.color = "red";
+        }
+        if (result3 == "fout"){
+            document.getElementById("ans3").style.color = "red";
+        }
+        if (result4 == "fout"){
+            document.getElementById("ans4").style.color = "red";
+        }
+        if (result5 == "fout"){
+            document.getElementById("ans5").style.color = "red";
+        }
+        if (result6 == "fout"){
+            document.getElementById("ans6").style.color = "red";
+        }
+        if (result7 == "fout"){
+            document.getElementById("ans7").style.color = "red";
+        }
+        if (result8 == "fout"){
+            document.getElementById("ans8").style.color = "red";
+        }
+        if (result9 == "fout"){
+            document.getElementById("ans9").style.color = "red";
+        }
+        if (result10 == "fout"){
+            document.getElementById("ans10").style.color = "red";
+        }
     }
 
     function start(){
